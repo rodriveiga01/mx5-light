@@ -1,0 +1,8396 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "00000000-0000-4000-8000-000000000001")
+	(paper "A3")
+	(title_block
+		(title "NA Wink controller - relay bypass")
+		(rev "0.3.3")
+		(comment 1 "REVIEW DRAFT - ERC 0 errors (warnings remain) - NOT fabrication-ready")
+		(comment 2 "De-energized NC = OEM path. Independent design; no OpenWink HW copy.")
+		(comment 3 "Open in KiCad >=10, remap symbols/footprints, run ERC. See kicad/README.md")
+	)
+	(lib_symbols
+		(symbol "na-wink:ESP32_S3_WROOM_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "ESP32_S3"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ESP32_S3_WROOM_1"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:ESP32_S3_WROOM_1"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ESP32_S3_WROOM_1_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ESP32_S3_WROOM_1_1_1"
+				(pin power_in line
+					(at -10 -7.5 0)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10 -2.5 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -10 2.5 0)
+					(length 2.54)
+					(name "GPIO4"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -10 7.5 0)
+					(length 2.54)
+					(name "GPIO5"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10 -7.5 180)
+					(length 2.54)
+					(name "GPIO6"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10 -2.5 180)
+					(length 2.54)
+					(name "GPIO7"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10 2.5 180)
+					(length 2.54)
+					(name "GPIO9"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10 7.5 180)
+					(length 2.54)
+					(name "GPIO14"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10 12.5 180)
+					(length 2.54)
+					(name "GPIO21"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:RELAY_DPDT_G2R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RELAY_DP"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "RELAY_DPDT_G2R"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:RELAY_DPDT_G2R"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RELAY_DPDT_G2R_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "RELAY_DPDT_G2R_1_1"
+				(pin passive line
+					(at -10 -7.5 0)
+					(length 2.54)
+					(name "COIL+"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10 7.5 0)
+					(length 2.54)
+					(name "COIL-"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 -7.5 180)
+					(length 2.54)
+					(name "COM1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 -2.5 180)
+					(length 2.54)
+					(name "NC1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 2.5 180)
+					(length 2.54)
+					(name "NO1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 7.5 180)
+					(length 2.54)
+					(name "COM2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:MMBT2222A"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "MMBT2222"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MMBT2222A"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:MMBT2222A"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MMBT2222A_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MMBT2222A_1_1"
+				(pin input line
+					(at -10 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 -5 180)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 5 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:LM46002_BUCK"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LM46002_"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LM46002_BUCK"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:LM46002_BUCK"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LM46002_BUCK_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LM46002_BUCK_1_1"
+				(pin power_in line
+					(at -10 -5 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10 5 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10 -5 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10 5 180)
+					(length 2.54)
+					(name "VOUT5V"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:KF33BD_LDO"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "KF33BD_L"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "KF33BD_LDO"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:KF33BD_LDO"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "KF33BD_LDO_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "KF33BD_LDO_1_1"
+				(pin power_in line
+					(at -10 -5 0)
+					(length 2.54)
+					(name "VIN5V"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10 5 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10 0 180)
+					(length 2.54)
+					(name "VOUT3V3"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:SMBJ26CA_TVS"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SMBJ26CA"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SMBJ26CA_TVS"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:SMBJ26CA_TVS"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SMBJ26CA_TVS_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SMBJ26CA_TVS_1_1"
+				(pin passive line
+					(at -10 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:FUSE_ATO_10A"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FUSE_ATO"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "FUSE_ATO_10A"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:FUSE_ATO_10A"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FUSE_ATO_10A_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "FUSE_ATO_10A_1_1"
+				(pin passive line
+					(at -10 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:D_REV_IDEAL"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D_REV_ID"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "D_REV_IDEAL"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:D_REV_IDEAL"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_REV_IDEAL_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "D_REV_IDEAL_1_1"
+				(pin passive line
+					(at -10 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:PWR_FLAG"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "PWR_FLAG"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:PWR_FLAG"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_1_1"
+				(pin power_out line
+					(at 0 0 0)
+					(length 2.54)
+					(name "PWR"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:TP"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TP"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:TP"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TP_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TP_1_1"
+				(pin passive line
+					(at 0 -5 90)
+					(length 2.54)
+					(name "TP"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:CONN_8_MX120G"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "CONN_8_M"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "CONN_8_MX120G"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:CONN_8_MX120G"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CONN_8_MX120G_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "CONN_8_MX120G_1_1"
+				(pin power_in line
+					(at -10 -7.5 0)
+					(length 2.54)
+					(name "VBAT"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10 -2.5 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10 2.5 0)
+					(length 2.54)
+					(name "OEM_L_A"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10 7.5 0)
+					(length 2.54)
+					(name "OEM_L_B"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 -7.5 180)
+					(length 2.54)
+					(name "OEM_R_A"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 -2.5 180)
+					(length 2.54)
+					(name "OEM_R_B"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 2.5 180)
+					(length 2.54)
+					(name "BTN"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 7.5 180)
+					(length 2.54)
+					(name "AUXGND"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:CONN_3_MOTOR"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "CONN_3_M"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "CONN_3_MOTOR"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:CONN_3_MOTOR"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CONN_3_MOTOR_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "CONN_3_MOTOR_1_1"
+				(pin passive line
+					(at -10 -5 0)
+					(length 2.54)
+					(name "MOT_A"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10 5 0)
+					(length 2.54)
+					(name "MOT_B"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 0 180)
+					(length 2.54)
+					(name "SHIELD"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:OPTO_4N25"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "OPTO_4N2"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "OPTO_4N25"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:OPTO_4N25"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "OPTO_4N25_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "OPTO_4N25_1_1"
+				(pin input line
+					(at -10 -5 0)
+					(length 2.54)
+					(name "ANODE"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10 5 0)
+					(length 2.54)
+					(name "CATH"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 -5 180)
+					(length 2.54)
+					(name "COLL"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 5 180)
+					(length 2.54)
+					(name "EMIT"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol Device:R"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol Device:C"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol Device:D"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:L_BUCK"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L_BUCK"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "L_BUCK"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:L_BUCK"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "L_BUCK_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "L_BUCK_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "na-wink:PROG_1X06"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "PROG_1X0"
+				(at 0 12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "PROG_1X06"
+				(at 0 -12 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "na-wink review symbol na-wink:PROG_1X06"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PROG_1X06_0_1"
+				(rectangle
+					(start -10 -10)
+					(end 10 10)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "PROG_1X06_1_1"
+				(pin passive line
+					(at -10 -7.5 0)
+					(length 2.54)
+					(name "TX0"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10 -2.5 0)
+					(length 2.54)
+					(name "RX0"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10 2.5 0)
+					(length 2.54)
+					(name "BOOT"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 -7.5 180)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 -2.5 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10 2.5 180)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+									(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:CONN_8_MX120G")
+		(at 20 40 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000002")
+		(property "Reference" "J1"
+			(at 20 28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX120G-8-sealed"
+			(at 20 52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Molex:MX120G-8"
+			(at 20 40 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20 40 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 20 40 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000003")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000004")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000005")
+		)
+		(pin "4"
+			(uuid "00000000-0000-4000-8000-000000000006")
+		)
+		(pin "5"
+			(uuid "00000000-0000-4000-8000-000000000007")
+		)
+		(pin "6"
+			(uuid "00000000-0000-4000-8000-000000000008")
+		)
+		(pin "7"
+			(uuid "00000000-0000-4000-8000-000000000009")
+		)
+		(pin "8"
+			(uuid "00000000-0000-4000-8000-000000000010")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:FUSE_ATO_10A")
+		(at 50 40 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000011")
+		(property "Reference" "F1"
+			(at 50 28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10A-ATO"
+			(at 50 52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:ATO-blade"
+			(at 50 40 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50 40 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 50 40 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000012")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000013")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:SMBJ26CA_TVS")
+		(at 80 30 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000014")
+		(property "Reference" "TVS1"
+			(at 80 18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMBJ26CA"
+			(at 80 42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:Diodes_SMB"
+			(at 80 30 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80 30 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 80 30 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000015")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000016")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "TVS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:LM46002_BUCK")
+		(at 105 40 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000017")
+		(property "Reference" "U_BUCK"
+			(at 105 28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM46002-5V"
+			(at 105 52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Module:Buck-12V-5V-2A"
+			(at 105 40 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105 40 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 105 40 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000018")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000019")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000020")
+		)
+		(pin "4"
+			(uuid "00000000-0000-4000-8000-000000000021")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "U_BUCK")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:L_BUCK")
+		(at 125 45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000022")
+		(property "Reference" "L_BUCK"
+			(at 125 33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4U7-per-buck-datasheet"
+			(at 125 57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:LX_4U7_TBD"
+			(at 125 45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125 45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 125 45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000023")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000024")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "L_BUCK")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:KF33BD_LDO")
+		(at 140 40 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000025")
+		(property "Reference" "U_LDO"
+			(at 140 28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "KF33BD-3V3"
+			(at 140 52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
+			(at 140 40 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140 40 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 140 40 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000026")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000027")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000028")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "U_LDO")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:ESP32_S3_WROOM_1")
+		(at 110 100 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000029")
+		(property "Reference" "U_MCU"
+			(at 110 88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESP32-S3-WROOM-1-N8"
+			(at 110 112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Module:ESP32-S3-WROOM-1"
+			(at 110 100 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110 100 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 110 100 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000030")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000031")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000032")
+		)
+		(pin "4"
+			(uuid "00000000-0000-4000-8000-000000000033")
+		)
+		(pin "5"
+			(uuid "00000000-0000-4000-8000-000000000034")
+		)
+		(pin "6"
+			(uuid "00000000-0000-4000-8000-000000000035")
+		)
+		(pin "7"
+			(uuid "00000000-0000-4000-8000-000000000036")
+		)
+		(pin "8"
+			(uuid "00000000-0000-4000-8000-000000000037")
+		)
+		(pin "9"
+			(uuid "00000000-0000-4000-8000-000000000038")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "U_MCU")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:RELAY_DPDT_G2R")
+		(at 60 160 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000039")
+		(property "Reference" "K1"
+			(at 60 148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "G2R-2-DC5-LEFT-A"
+			(at 60 172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay_THT:Omron_G2R-2"
+			(at 60 160 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60 160 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 60 160 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000040")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000041")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000042")
+		)
+		(pin "4"
+			(uuid "00000000-0000-4000-8000-000000000043")
+		)
+		(pin "5"
+			(uuid "00000000-0000-4000-8000-000000000044")
+		)
+		(pin "6"
+			(uuid "00000000-0000-4000-8000-000000000045")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "K1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:RELAY_DPDT_G2R")
+		(at 100 160 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000046")
+		(property "Reference" "K2"
+			(at 100 148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "G2R-2-DC5-LEFT-B"
+			(at 100 172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay_THT:Omron_G2R-2"
+			(at 100 160 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100 160 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 100 160 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000047")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000048")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000049")
+		)
+		(pin "4"
+			(uuid "00000000-0000-4000-8000-000000000050")
+		)
+		(pin "5"
+			(uuid "00000000-0000-4000-8000-000000000051")
+		)
+		(pin "6"
+			(uuid "00000000-0000-4000-8000-000000000052")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "K2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:RELAY_DPDT_G2R")
+		(at 140 160 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000053")
+		(property "Reference" "K3"
+			(at 140 148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "G2R-2-DC5-RIGHT-A"
+			(at 140 172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay_THT:Omron_G2R-2"
+			(at 140 160 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140 160 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 140 160 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000054")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000055")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000056")
+		)
+		(pin "4"
+			(uuid "00000000-0000-4000-8000-000000000057")
+		)
+		(pin "5"
+			(uuid "00000000-0000-4000-8000-000000000058")
+		)
+		(pin "6"
+			(uuid "00000000-0000-4000-8000-000000000059")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "K3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:RELAY_DPDT_G2R")
+		(at 180 160 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000060")
+		(property "Reference" "K4"
+			(at 180 148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "G2R-2-DC5-RIGHT-B"
+			(at 180 172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay_THT:Omron_G2R-2"
+			(at 180 160 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180 160 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 180 160 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000061")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000062")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000063")
+		)
+		(pin "4"
+			(uuid "00000000-0000-4000-8000-000000000064")
+		)
+		(pin "5"
+			(uuid "00000000-0000-4000-8000-000000000065")
+		)
+		(pin "6"
+			(uuid "00000000-0000-4000-8000-000000000066")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "K4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:MMBT2222A")
+		(at 60 130 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000067")
+		(property "Reference" "Q1"
+			(at 60 118 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MMBT2222A"
+			(at 60 142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 60 130 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60 130 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 60 130 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000068")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000069")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000070")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 52 122 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000071")
+		(property "Reference" "R1"
+			(at 52 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "560R-0603"
+			(at 52 134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:R_0603"
+			(at 52 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 52 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000072")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000073")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 68 122 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000074")
+		(property "Reference" "D1"
+			(at 68 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148-flyback"
+			(at 68 134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:D_SOD-123"
+			(at 68 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 68 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000075")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000076")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:MMBT2222A")
+		(at 100 130 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000077")
+		(property "Reference" "Q2"
+			(at 100 118 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MMBT2222A"
+			(at 100 142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 100 130 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100 130 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 100 130 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000078")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000079")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000080")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 92 122 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000081")
+		(property "Reference" "R2"
+			(at 92 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "560R-0603"
+			(at 92 134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:R_0603"
+			(at 92 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 92 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000082")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000083")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 108 122 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000084")
+		(property "Reference" "D2"
+			(at 108 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148-flyback"
+			(at 108 134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:D_SOD-123"
+			(at 108 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 108 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 108 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000085")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000086")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:MMBT2222A")
+		(at 140 130 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000087")
+		(property "Reference" "Q3"
+			(at 140 118 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MMBT2222A"
+			(at 140 142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 140 130 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140 130 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 140 130 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000088")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000089")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000090")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 132 122 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000091")
+		(property "Reference" "R3"
+			(at 132 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "560R-0603"
+			(at 132 134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:R_0603"
+			(at 132 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 132 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000092")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000093")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 148 122 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000094")
+		(property "Reference" "D3"
+			(at 148 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148-flyback"
+			(at 148 134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:D_SOD-123"
+			(at 148 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 148 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000095")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000096")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:MMBT2222A")
+		(at 180 130 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000097")
+		(property "Reference" "Q4"
+			(at 180 118 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MMBT2222A"
+			(at 180 142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 180 130 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180 130 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 180 130 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000098")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000099")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000100")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 172 122 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000101")
+		(property "Reference" "R4"
+			(at 172 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "560R-0603"
+			(at 172 134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:R_0603"
+			(at 172 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 172 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000102")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000103")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 188 122 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000104")
+		(property "Reference" "D4"
+			(at 188 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148-flyback"
+			(at 188 134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:D_SOD-123"
+			(at 188 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 188 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 188 122 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000105")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000106")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:OPTO_4N25")
+		(at 30 100 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000107")
+		(property "Reference" "U_OPTO_BTN"
+			(at 30 88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4N25-BTN_SENSE"
+			(at 30 112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-6"
+			(at 30 100 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30 100 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 30 100 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000108")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000109")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000110")
+		)
+		(pin "4"
+			(uuid "00000000-0000-4000-8000-000000000111")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "U_OPTO_BTN")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 20 85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000112")
+		(property "Reference" "D5"
+			(at 20 73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148-revprot"
+			(at 20 97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:D_SOD-123"
+			(at 20 85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20 85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 20 85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000113")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000114")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:CONN_3_MOTOR")
+		(at 60 200 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000115")
+		(property "Reference" "J2"
+			(at 60 188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX120G-3-LEFT"
+			(at 60 212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Molex:MX120G-3"
+			(at 60 200 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60 200 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 60 200 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000116")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000117")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000118")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:CONN_3_MOTOR")
+		(at 140 200 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000119")
+		(property "Reference" "J3"
+			(at 140 188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX120G-3-RIGHT"
+			(at 140 212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Molex:MX120G-3"
+			(at 140 200 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140 200 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 140 200 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000120")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000121")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000122")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:PROG_1X06")
+		(at 200 100 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000123")
+		(property "Reference" "J_PROG"
+			(at 200 88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PROG-1x06"
+			(at 200 112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader:PinHeader_1x06_P2.54"
+			(at 200 100 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200 100 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200 100 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000124")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000125")
+		)
+		(pin "3"
+			(uuid "00000000-0000-4000-8000-000000000126")
+		)
+		(pin "4"
+			(uuid "00000000-0000-4000-8000-000000000127")
+		)
+		(pin "5"
+			(uuid "00000000-0000-4000-8000-000000000128")
+		)
+		(pin "6"
+			(uuid "00000000-0000-4000-8000-000000000129")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "J_PROG")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 140 95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000130")
+		(property "Reference" "R_AUX1"
+			(at 140 83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k-0603"
+			(at 140 107 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:R_0603"
+			(at 140 95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140 95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 140 95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000131")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000132")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "R_AUX1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 140 80 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000133")
+		(property "Reference" "R_AUX2"
+			(at 140 68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k-0603"
+			(at 140 92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:R_0603"
+			(at 140 80 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140 80 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 140 80 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000134")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000135")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "R_AUX2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 84 55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000136")
+		(property "Reference" "C_BULK1"
+			(at 84 43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470uF-50V"
+			(at 84 67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10"
+			(at 84 55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 84 55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 84 55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000137")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000138")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "C_BULK1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 125 55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000139")
+		(property "Reference" "C_BULK2"
+			(at 125 43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470uF-50V"
+			(at 125 67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10"
+			(at 125 55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125 55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 125 55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000140")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000141")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "C_BULK2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 100 70 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000142")
+		(property "Reference" "C_DEC1"
+			(at 100 58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF-50V-0603"
+			(at 100 82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:C_0603"
+			(at 100 70 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100 70 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 100 70 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000143")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000144")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "C_DEC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 110 70 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000145")
+		(property "Reference" "C_DEC2"
+			(at 110 58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF-50V-0603"
+			(at 110 82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:C_0603"
+			(at 110 70 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110 70 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 110 70 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000146")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000147")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "C_DEC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 120 70 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000148")
+		(property "Reference" "C_DEC3"
+			(at 120 58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF-50V-0603"
+			(at 120 82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:C_0603"
+			(at 120 70 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120 70 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 120 70 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000149")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000150")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "C_DEC3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 60 145 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000151")
+		(property "Reference" "C_DEC4"
+			(at 60 133 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF-50V-0603"
+			(at 60 157 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:C_0603"
+			(at 60 145 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60 145 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 60 145 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000152")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000153")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "C_DEC4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 140 145 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000154")
+		(property "Reference" "C_DEC5"
+			(at 140 133 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF-50V-0603"
+			(at 140 157 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:C_0603"
+			(at 140 145 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140 145 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 140 145 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000155")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000156")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "C_DEC5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:D_REV_IDEAL")
+		(at 60 52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000157")
+		(property "Reference" "D_REV"
+			(at 60 40 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM5050-ideal-diode-TBD"
+			(at 60 64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Module:D_REV-LM5050-CSD18532-TBD"
+			(at 60 52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60 52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 60 52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000158")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000159")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "D_REV")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 24 70 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000160")
+		(property "Reference" "R_SENSE"
+			(at 24 58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "590R-TBD-METERING"
+			(at 24 82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SMD:R_0603"
+			(at 24 70 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24 70 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 24 70 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000161")
+		)
+		(pin "2"
+			(uuid "00000000-0000-4000-8000-000000000162")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "R_SENSE")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:PWR_FLAG")
+		(at 25 52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000163")
+		(property "Reference" "FLG1"
+			(at 25 40 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 25 64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25 52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25 52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 25 52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000164")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "FLG1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:PWR_FLAG")
+		(at 95 52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000165")
+		(property "Reference" "FLG2"
+			(at 95 40 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 95 64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95 52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95 52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 95 52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000166")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "FLG2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:PWR_FLAG")
+		(at 14 42.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000167")
+		(property "Reference" "FLG3"
+			(at 14 30.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 14 54.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 14 42.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 14 42.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 14 42.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000168")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "FLG3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:TP")
+		(at 205 120 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000169")
+		(property "Reference" "TP1"
+			(at 205 108 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TP_VBAT"
+			(at 205 132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:Loop_D2.5"
+			(at 205 120 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205 120 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205 120 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000170")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:TP")
+		(at 205 145 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000171")
+		(property "Reference" "TP2"
+			(at 205 133 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TP_GND"
+			(at 205 157 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:Loop_D2.5"
+			(at 205 145 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205 145 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205 145 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000172")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:TP")
+		(at 205 170 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000173")
+		(property "Reference" "TP3"
+			(at 205 158 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TP_3V3"
+			(at 205 182 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:Loop_D2.5"
+			(at 205 170 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205 170 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205 170 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000174")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:TP")
+		(at 205 195 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000175")
+		(property "Reference" "TP4"
+			(at 205 183 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TP_5V"
+			(at 205 207 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:Loop_D2.5"
+			(at 205 195 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205 195 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205 195 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000176")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:TP")
+		(at 225 120 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000177")
+		(property "Reference" "TP5"
+			(at 225 108 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TP_COIL_L"
+			(at 225 132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:Loop_D2.5"
+			(at 225 120 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 225 120 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 225 120 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000178")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:TP")
+		(at 225 145 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000179")
+		(property "Reference" "TP6"
+			(at 225 133 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TP_COIL_R"
+			(at 225 157 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:Loop_D2.5"
+			(at 225 145 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 225 145 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 225 145 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000180")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:TP")
+		(at 225 170 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000181")
+		(property "Reference" "TP7"
+			(at 225 158 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TP_MOT_L"
+			(at 225 182 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:Loop_D2.5"
+			(at 225 170 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 225 170 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 225 170 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000182")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "na-wink:TP")
+		(at 225 195 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00000000-0000-4000-8000-000000000183")
+		(property "Reference" "TP8"
+			(at 225 183 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TP_MOT_R"
+			(at 225 207 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:Loop_D2.5"
+			(at 225 195 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 225 195 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 225 195 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00000000-0000-4000-8000-000000000184")
+		)
+		(instances
+			(project "na-wink"
+				(path "/00000000-0000-4000-8000-000000000001"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 10 47.5) (xy 10 52)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000185")
+	)
+	(wire
+		(pts
+			(xy 10 52) (xy 25 52)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000186")
+	)
+	(wire
+		(pts
+			(xy 25 52) (xy 40 52)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000187")
+	)
+	(wire
+		(pts
+			(xy 40 52) (xy 40 40)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000188")
+	)
+	(wire
+		(pts
+			(xy 60 40) (xy 60 52)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000189")
+	)
+	(wire
+		(pts
+			(xy 60 52) (xy 50 52)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000190")
+	)
+	(wire
+		(pts
+			(xy 70 52) (xy 95 52)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000191")
+	)
+	(wire
+		(pts
+			(xy 95 52) (xy 100 52)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000192")
+	)
+	(wire
+		(pts
+			(xy 95 52) (xy 95 45)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000193")
+	)
+	(wire
+		(pts
+			(xy 70 30) (xy 70 52)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000194")
+	)
+	(wire
+		(pts
+			(xy 90 30) (xy 90 24)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000195")
+	)
+	(wire
+		(pts
+			(xy 115 45) (xy 117.38 45)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000196")
+	)
+	(wire
+		(pts
+			(xy 132.62 45) (xy 130 45)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000197")
+	)
+	(wire
+		(pts
+			(xy 115 35) (xy 115 36)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000198")
+	)
+	(wire
+		(pts
+			(xy 115 36) (xy 132.62 36)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000199")
+	)
+	(wire
+		(pts
+			(xy 132.62 36) (xy 132.62 45)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000200")
+	)
+	(wire
+		(pts
+			(xy 150 40) (xy 160 40)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000201")
+	)
+	(wire
+		(pts
+			(xy 160 40) (xy 160 112)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000202")
+	)
+	(wire
+		(pts
+			(xy 160 112) (xy 100 112)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000203")
+	)
+	(wire
+		(pts
+			(xy 100 112) (xy 100 107.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000204")
+	)
+	(wire
+		(pts
+			(xy 70 125) (xy 45 125)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000205")
+	)
+	(wire
+		(pts
+			(xy 45 125) (xy 45 152.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000206")
+	)
+	(wire
+		(pts
+			(xy 45 152.5) (xy 50 152.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000207")
+	)
+	(wire
+		(pts
+			(xy 110 125) (xy 85 125)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000208")
+	)
+	(wire
+		(pts
+			(xy 85 125) (xy 85 152.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000209")
+	)
+	(wire
+		(pts
+			(xy 85 152.5) (xy 90 152.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000210")
+	)
+	(wire
+		(pts
+			(xy 150 125) (xy 125 125)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000211")
+	)
+	(wire
+		(pts
+			(xy 125 125) (xy 125 152.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000212")
+	)
+	(wire
+		(pts
+			(xy 125 152.5) (xy 130 152.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000213")
+	)
+	(wire
+		(pts
+			(xy 190 125) (xy 165 125)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000214")
+	)
+	(wire
+		(pts
+			(xy 165 125) (xy 165 152.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000215")
+	)
+	(wire
+		(pts
+			(xy 165 152.5) (xy 170 152.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000216")
+	)
+	(wire
+		(pts
+			(xy 70 167.5) (xy 75 167.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000217")
+	)
+	(wire
+		(pts
+			(xy 75 167.5) (xy 75 205)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000218")
+	)
+	(wire
+		(pts
+			(xy 75 205) (xy 50 205)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000219")
+	)
+	(wire
+		(pts
+			(xy 110 167.5) (xy 115 167.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000220")
+	)
+	(wire
+		(pts
+			(xy 115 167.5) (xy 115 195)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000221")
+	)
+	(wire
+		(pts
+			(xy 115 195) (xy 50 195)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000222")
+	)
+	(wire
+		(pts
+			(xy 150 167.5) (xy 155 167.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000223")
+	)
+	(wire
+		(pts
+			(xy 155 167.5) (xy 155 205)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000224")
+	)
+	(wire
+		(pts
+			(xy 155 205) (xy 130 205)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000225")
+	)
+	(wire
+		(pts
+			(xy 190 167.5) (xy 195 167.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000226")
+	)
+	(wire
+		(pts
+			(xy 195 167.5) (xy 195 195)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000227")
+	)
+	(wire
+		(pts
+			(xy 195 195) (xy 130 195)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000228")
+	)
+	(wire
+		(pts
+			(xy 30 37.5) (xy 15 37.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000229")
+	)
+	(wire
+		(pts
+			(xy 15 37.5) (xy 15 70)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000230")
+	)
+	(wire
+		(pts
+			(xy 15 70) (xy 16.38 70)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000231")
+	)
+	(wire
+		(pts
+			(xy 31.62 70) (xy 31.62 105)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000232")
+	)
+	(wire
+		(pts
+			(xy 31.62 105) (xy 20 105)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000233")
+	)
+	(wire
+		(pts
+			(xy 12.38 85) (xy 8 85)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000234")
+	)
+	(label "GND"
+		(at 10 85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000235")
+	)
+	(wire
+		(pts
+			(xy 27.62 85) (xy 31 85)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000236")
+	)
+	(label "BTN_SENSE"
+		(at 29 85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000237")
+	)
+	(wire
+		(pts
+			(xy 10 42.5) (xy 14 42.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000238")
+	)
+	(label "GND"
+		(at 12 42.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000239")
+	)
+	(wire
+		(pts
+			(xy 95 35) (xy 95 31)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000240")
+	)
+	(label "GND"
+		(at 95 33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000241")
+	)
+	(wire
+		(pts
+			(xy 130 35) (xy 130 31)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000242")
+	)
+	(label "GND"
+		(at 130 33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000243")
+	)
+	(wire
+		(pts
+			(xy 100 102.5) (xy 96 102.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000244")
+	)
+	(label "GND"
+		(at 98 102.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000245")
+	)
+	(wire
+		(pts
+			(xy 70 135) (xy 70 139)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000246")
+	)
+	(label "GND"
+		(at 70 137 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000247")
+	)
+	(wire
+		(pts
+			(xy 110 135) (xy 110 139)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000248")
+	)
+	(label "GND"
+		(at 110 137 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000249")
+	)
+	(wire
+		(pts
+			(xy 150 135) (xy 150 139)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000250")
+	)
+	(label "GND"
+		(at 150 137 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000251")
+	)
+	(wire
+		(pts
+			(xy 190 135) (xy 190 139)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000252")
+	)
+	(label "GND"
+		(at 190 137 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000253")
+	)
+	(wire
+		(pts
+			(xy 40 95) (xy 44 95)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000254")
+	)
+	(label "GND"
+		(at 42 95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000255")
+	)
+	(wire
+		(pts
+			(xy 20 95) (xy 20 91)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000256")
+	)
+	(label "GND"
+		(at 20 93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000257")
+	)
+	(wire
+		(pts
+			(xy 84 47.38) (xy 84 43)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000258")
+	)
+	(label "GND"
+		(at 84 45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000259")
+	)
+	(wire
+		(pts
+			(xy 125 47.38) (xy 125 43)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000260")
+	)
+	(label "GND"
+		(at 125 45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000261")
+	)
+	(wire
+		(pts
+			(xy 100 62.38) (xy 100 58)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000262")
+	)
+	(label "GND"
+		(at 100 60 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000263")
+	)
+	(wire
+		(pts
+			(xy 110 62.38) (xy 110 58)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000264")
+	)
+	(label "GND"
+		(at 110 60 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000265")
+	)
+	(wire
+		(pts
+			(xy 120 62.38) (xy 120 58)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000266")
+	)
+	(label "GND"
+		(at 120 60 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000267")
+	)
+	(wire
+		(pts
+			(xy 60 137.38) (xy 60 133)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000268")
+	)
+	(label "GND"
+		(at 60 135 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000269")
+	)
+	(wire
+		(pts
+			(xy 140 137.38) (xy 140 133)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000270")
+	)
+	(label "GND"
+		(at 140 135 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000271")
+	)
+	(wire
+		(pts
+			(xy 70 200) (xy 70 204)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000272")
+	)
+	(label "GND"
+		(at 70 202 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000273")
+	)
+	(wire
+		(pts
+			(xy 150 200) (xy 150 204)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000274")
+	)
+	(label "GND"
+		(at 150 202 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000275")
+	)
+	(wire
+		(pts
+			(xy 90 30) (xy 90 24)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000276")
+	)
+	(label "GND"
+		(at 90 26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000277")
+	)
+	(wire
+		(pts
+			(xy 50 167.5) (xy 50 172)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000278")
+	)
+	(label "5V"
+		(at 50 170 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000279")
+	)
+	(wire
+		(pts
+			(xy 90 167.5) (xy 90 172)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000280")
+	)
+	(label "5V"
+		(at 90 170 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000281")
+	)
+	(wire
+		(pts
+			(xy 130 167.5) (xy 130 172)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000282")
+	)
+	(label "5V"
+		(at 130 170 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000283")
+	)
+	(wire
+		(pts
+			(xy 170 167.5) (xy 170 172)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000284")
+	)
+	(label "5V"
+		(at 170 170 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000285")
+	)
+	(wire
+		(pts
+			(xy 75.62 122) (xy 79 122)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000286")
+	)
+	(label "5V"
+		(at 77 122 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000287")
+	)
+	(wire
+		(pts
+			(xy 115.62 122) (xy 119 122)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000288")
+	)
+	(label "5V"
+		(at 117 122 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000289")
+	)
+	(wire
+		(pts
+			(xy 155.62 122) (xy 159 122)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000290")
+	)
+	(label "5V"
+		(at 157 122 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000291")
+	)
+	(wire
+		(pts
+			(xy 195.62 122) (xy 199 122)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000292")
+	)
+	(label "5V"
+		(at 197 122 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000293")
+	)
+	(wire
+		(pts
+			(xy 120 77.62) (xy 124 77.62)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000294")
+	)
+	(label "5V"
+		(at 122 77.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000295")
+	)
+	(wire
+		(pts
+			(xy 60 152.62) (xy 60 157)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000296")
+	)
+	(label "5V"
+		(at 60 155 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000297")
+	)
+	(wire
+		(pts
+			(xy 140 152.62) (xy 140 157)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000298")
+	)
+	(label "5V"
+		(at 140 155 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000299")
+	)
+	(wire
+		(pts
+			(xy 100 77.62) (xy 100 82)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000300")
+	)
+	(label "3V3"
+		(at 100 80 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000301")
+	)
+	(wire
+		(pts
+			(xy 110 77.62) (xy 110 82)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000302")
+	)
+	(label "3V3"
+		(at 110 80 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000303")
+	)
+	(wire
+		(pts
+			(xy 84 62.62) (xy 80 62.62)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000304")
+	)
+	(label "12V_PROTECTED"
+		(at 82 62.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000305")
+	)
+	(wire
+		(pts
+			(xy 125 62.62) (xy 129 62.62)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000306")
+	)
+	(label "12V_PROTECTED"
+		(at 127 62.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000307")
+	)
+	(wire
+		(pts
+			(xy 10 37.5) (xy 6 37.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000308")
+	)
+	(label "OEM_L_A"
+		(at 8.0 37.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000309")
+	)
+	(wire
+		(pts
+			(xy 70 162.5) (xy 74 162.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000310")
+	)
+	(label "OEM_L_A"
+		(at 72.0 162.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000311")
+	)
+	(wire
+		(pts
+			(xy 10 32.5) (xy 6 32.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000312")
+	)
+	(label "OEM_L_B"
+		(at 8.0 32.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000313")
+	)
+	(wire
+		(pts
+			(xy 110 162.5) (xy 114 162.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000314")
+	)
+	(label "OEM_L_B"
+		(at 112.0 162.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000315")
+	)
+	(wire
+		(pts
+			(xy 30 47.5) (xy 34 47.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000316")
+	)
+	(label "OEM_R_A"
+		(at 32.0 47.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000317")
+	)
+	(wire
+		(pts
+			(xy 150 162.5) (xy 154 162.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000318")
+	)
+	(label "OEM_R_A"
+		(at 152.0 162.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000319")
+	)
+	(wire
+		(pts
+			(xy 30 42.5) (xy 34 42.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000320")
+	)
+	(label "OEM_R_B"
+		(at 32.0 42.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000321")
+	)
+	(wire
+		(pts
+			(xy 190 162.5) (xy 194 162.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000322")
+	)
+	(label "OEM_R_B"
+		(at 192.0 162.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000323")
+	)
+	(wire
+		(pts
+			(xy 100 97.5) (xy 96 97.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000324")
+	)
+	(label "N_G4R1"
+		(at 98.0 97.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000325")
+	)
+	(wire
+		(pts
+			(xy 44.38 122) (xy 44.38 118)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000326")
+	)
+	(label "N_G4R1"
+		(at 44.38 120.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000327")
+	)
+	(wire
+		(pts
+			(xy 59.62 122) (xy 59.62 126)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000328")
+	)
+	(label "N_R1Q1"
+		(at 59.62 124.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000329")
+	)
+	(wire
+		(pts
+			(xy 50 130) (xy 50 134)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000330")
+	)
+	(label "N_R1Q1"
+		(at 50.0 132.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000331")
+	)
+	(wire
+		(pts
+			(xy 100 92.5) (xy 96 92.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000332")
+	)
+	(label "N_G5R2"
+		(at 98.0 92.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000333")
+	)
+	(wire
+		(pts
+			(xy 84.38 122) (xy 84.38 118)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000334")
+	)
+	(label "N_G5R2"
+		(at 84.38 120.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000335")
+	)
+	(wire
+		(pts
+			(xy 99.62 122) (xy 99.62 126)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000336")
+	)
+	(label "N_R2Q2"
+		(at 99.62 124.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000337")
+	)
+	(wire
+		(pts
+			(xy 90 130) (xy 90 134)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000338")
+	)
+	(label "N_R2Q2"
+		(at 90.0 132.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000339")
+	)
+	(wire
+		(pts
+			(xy 120 107.5) (xy 124 107.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000340")
+	)
+	(label "N_G6R3"
+		(at 122.0 107.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000341")
+	)
+	(wire
+		(pts
+			(xy 124.38 122) (xy 124.38 118)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000342")
+	)
+	(label "N_G6R3"
+		(at 124.38 120.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000343")
+	)
+	(wire
+		(pts
+			(xy 139.62 122) (xy 139.62 126)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000344")
+	)
+	(label "N_R3Q3"
+		(at 139.62 124.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000345")
+	)
+	(wire
+		(pts
+			(xy 130 130) (xy 130 134)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000346")
+	)
+	(label "N_R3Q3"
+		(at 130.0 132.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000347")
+	)
+	(wire
+		(pts
+			(xy 120 102.5) (xy 124 102.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000348")
+	)
+	(label "N_G7R4"
+		(at 122.0 102.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000349")
+	)
+	(wire
+		(pts
+			(xy 164.38 122) (xy 164.38 118)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000350")
+	)
+	(label "N_G7R4"
+		(at 164.38 120.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000351")
+	)
+	(wire
+		(pts
+			(xy 179.62 122) (xy 179.62 126)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000352")
+	)
+	(label "N_R4Q4"
+		(at 179.62 124.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000353")
+	)
+	(wire
+		(pts
+			(xy 170 130) (xy 170 134)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000354")
+	)
+	(label "N_R4Q4"
+		(at 170.0 132.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000355")
+	)
+	(wire
+		(pts
+			(xy 60.38 122) (xy 64 122)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000356")
+	)
+	(label "RELAY_L_COIL_A"
+		(at 62.19 122.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000357")
+	)
+	(wire
+		(pts
+			(xy 100.38 122) (xy 104 122)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000358")
+	)
+	(label "RELAY_L_COIL_B"
+		(at 102.19 122.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000359")
+	)
+	(wire
+		(pts
+			(xy 140.38 122) (xy 144 122)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000360")
+	)
+	(label "RELAY_R_COIL_A"
+		(at 142.19 122.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000361")
+	)
+	(wire
+		(pts
+			(xy 180.38 122) (xy 184 122)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000362")
+	)
+	(label "RELAY_R_COIL_B"
+		(at 182.19 122.0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000363")
+	)
+	(wire
+		(pts
+			(xy 70 157.5) (xy 74 157.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000364")
+	)
+	(label "12V_PROTECTED"
+		(at 72 157.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000365")
+	)
+	(no_connect
+		(at 70 152.5)
+		(uuid "00000000-0000-4000-8000-000000000366")
+	)
+	(wire
+		(pts
+			(xy 110 157.5) (xy 114 157.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000367")
+	)
+	(label "GND"
+		(at 112 157.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000368")
+	)
+	(no_connect
+		(at 110 152.5)
+		(uuid "00000000-0000-4000-8000-000000000369")
+	)
+	(wire
+		(pts
+			(xy 150 157.5) (xy 154 157.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000370")
+	)
+	(label "12V_PROTECTED"
+		(at 152 157.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000371")
+	)
+	(no_connect
+		(at 150 152.5)
+		(uuid "00000000-0000-4000-8000-000000000372")
+	)
+	(wire
+		(pts
+			(xy 190 157.5) (xy 194 157.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000373")
+	)
+	(label "GND"
+		(at 192 157.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000374")
+	)
+	(no_connect
+		(at 190 152.5)
+		(uuid "00000000-0000-4000-8000-000000000375")
+	)
+	(wire
+		(pts
+			(xy 40 105) (xy 40 109)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000376")
+	)
+	(label "N_SENSE9"
+		(at 40 107 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000377")
+	)
+	(wire
+		(pts
+			(xy 120 97.5) (xy 124 97.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000378")
+	)
+	(label "N_SENSE9"
+		(at 122 97.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000379")
+	)
+	(wire
+		(pts
+			(xy 120 92.5) (xy 132.38 92.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000380")
+	)
+	(wire
+		(pts
+			(xy 132.38 92.5) (xy 132.38 95)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000381")
+	)
+	(label "AUX1"
+		(at 126 92.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000382")
+	)
+	(wire
+		(pts
+			(xy 120 87.5) (xy 132.38 87.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000383")
+	)
+	(wire
+		(pts
+			(xy 132.38 87.5) (xy 132.38 80)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000384")
+	)
+	(label "AUX2"
+		(at 126 87.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000385")
+	)
+	(wire
+		(pts
+			(xy 147.62 80) (xy 147.62 95)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000386")
+	)
+	(wire
+		(pts
+			(xy 147.62 95) (xy 147.62 112)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000387")
+	)
+	(wire
+		(pts
+			(xy 147.62 112) (xy 160 112)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000388")
+	)
+	(wire
+		(pts
+			(xy 30 32.5) (xy 34 32.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000389")
+	)
+	(label "AUX_GND"
+		(at 32 32.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000390")
+	)
+	(wire
+		(pts
+			(xy 190 107.5) (xy 186 107.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000391")
+	)
+	(label "TX0"
+		(at 188.0 107.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000392")
+	)
+	(wire
+		(pts
+			(xy 190 102.5) (xy 186 102.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000393")
+	)
+	(label "RX0"
+		(at 188.0 102.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000394")
+	)
+	(wire
+		(pts
+			(xy 190 97.5) (xy 186 97.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000395")
+	)
+	(label "BOOT"
+		(at 188.0 97.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000396")
+	)
+	(wire
+		(pts
+			(xy 210 107.5) (xy 214 107.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000397")
+	)
+	(label "3V3"
+		(at 212.0 107.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000398")
+	)
+	(wire
+		(pts
+			(xy 210 102.5) (xy 214 102.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000399")
+	)
+	(label "GND"
+		(at 212.0 102.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000400")
+	)
+	(wire
+		(pts
+			(xy 210 97.5) (xy 214 97.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000401")
+	)
+	(label "EN"
+		(at 212.0 97.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000402")
+	)
+	(wire
+		(pts
+			(xy 205 125) (xy 205 130)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000403")
+	)
+	(label "VBAT"
+		(at 205 127.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000404")
+	)
+	(wire
+		(pts
+			(xy 205 150) (xy 205 155)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000405")
+	)
+	(label "GND"
+		(at 205 152.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000406")
+	)
+	(wire
+		(pts
+			(xy 205 175) (xy 205 180)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000407")
+	)
+	(label "3V3"
+		(at 205 177.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000408")
+	)
+	(wire
+		(pts
+			(xy 205 200) (xy 205 205)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000409")
+	)
+	(label "5V"
+		(at 205 202.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000410")
+	)
+	(wire
+		(pts
+			(xy 225 125) (xy 225 130)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000411")
+	)
+	(label "RELAY_L_COIL_A"
+		(at 225 127.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000412")
+	)
+	(wire
+		(pts
+			(xy 225 150) (xy 225 155)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000413")
+	)
+	(label "RELAY_R_COIL_A"
+		(at 225 152.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000414")
+	)
+	(wire
+		(pts
+			(xy 225 175) (xy 225 180)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000415")
+	)
+	(label "MOTOR_L_A"
+		(at 225 177.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000416")
+	)
+	(wire
+		(pts
+			(xy 225 200) (xy 225 205)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "00000000-0000-4000-8000-000000000417")
+	)
+	(label "MOTOR_R_A"
+		(at 225 202.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000418")
+	)
+	(label "VBAT"
+		(at 30 52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000419")
+	)
+	(label "VBAT_FUSED"
+		(at 55 52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000420")
+	)
+	(label "N_J1_RSENSE"
+		(at 15 60 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000421")
+	)
+	(label "12V_PROTECTED"
+		(at 85 52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000422")
+	)
+	(label "5V"
+		(at 124 36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000423")
+	)
+	(label "3V3"
+		(at 130 112 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000424")
+	)
+	(label "BTN_SENSE"
+		(at 26 105 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000425")
+	)
+	(label "RELAY_L_COIL_A"
+		(at 45 140 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000426")
+	)
+	(label "RELAY_L_COIL_B"
+		(at 85 140 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000427")
+	)
+	(label "RELAY_R_COIL_A"
+		(at 125 140 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000428")
+	)
+	(label "RELAY_R_COIL_B"
+		(at 165 140 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000429")
+	)
+	(label "MOTOR_L_A"
+		(at 75 185 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000430")
+	)
+	(label "MOTOR_L_B"
+		(at 90 195 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000431")
+	)
+	(label "MOTOR_R_A"
+		(at 155 185 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000432")
+	)
+	(label "MOTOR_R_B"
+		(at 160 195 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00000000-0000-4000-8000-000000000433")
+	)
+	(text "REVIEW DRAFT: NC=OEM straight-through per side (K1/K2 left pair, K3/K4 right pair)."
+		(exclude_from_sim no)
+		(at 20 220 0)
+		(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(justify left)
+	)
+		(uuid "00000000-0000-4000-8000-000000000434")
+	)
+	(text "Both-high inhibited in firmware (stagger >=150ms). Coil suppression D1-D4 across coils."
+		(exclude_from_sim no)
+		(at 20 225 0)
+		(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(justify left)
+	)
+		(uuid "00000000-0000-4000-8000-000000000435")
+	)
+	(text "TVS at entry. Fuse F1 accessible. Star GND at supply. See PROTECTION_ANALYSIS.md."
+		(exclude_from_sim no)
+		(at 20 230 0)
+		(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(justify left)
+	)
+		(uuid "00000000-0000-4000-8000-000000000436")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,64 @@
+{
+  "app": { "name": "NA Wink Controller", "offline": true, "version": "0.2.1" },
+  "home": {
+    "title": "Headlights",
+    "up": "Up",
+    "down": "Down",
+    "wink": "Wink",
+    "wave": "Wave",
+    "sleepy": "Sleepy eye",
+    "left": "Left",
+    "right": "Right",
+    "both": "Both",
+    "stop": "Stop",
+    "cancel": "Cancel",
+    "wave_delay": "Wave delay (ms)",
+    "sleepy_left": "Sleepy left (%)",
+    "sleepy_right": "Sleepy right (%)",
+    "save": "Save",
+    "status": "Status",
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "locked": "Locked — wait 5 s"
+  },
+  "safety": {
+    "road_disclaimer": "Display / track / private-property use only. Not approved for public-road use."
+  },
+  "pairing": {
+    "title": "Pair module",
+    "passkey": "6-digit passkey",
+    "forget": "Forget module",
+    "scan": "Scan",
+    "connect": "Connect",
+    "reconnect": "Reconnect",
+    "window": "Pairing window: 5 min after first boot",
+    "invalid_pin": "Enter exactly 6 digits",
+    "pin_ok": "PIN format OK — complete pairing on the module; connected shows after the first successful command"
+  },
+  "diag": {
+    "title": "Diagnostics",
+    "position": "Position",
+    "travel": "Last travel (ms)",
+    "fault": "Fault",
+    "firmware": "Firmware",
+    "settings": "Settings",
+    "clear_fault": "Clear fault",
+    "fault_none": "None",
+    "fault_overtime": "Overtime trip — check obstruction, then clear",
+    "fault_watchdog": "Watchdog reset — module rebooted to OEM pass",
+    "fault_locked": "Rate lockout — wait, then retry"
+  },
+  "settings": {
+    "title": "Settings",
+    "buttons": "Button mappings",
+    "oem_presses": "OEM presses (2–9)",
+    "press_gap": "Press gap (ms, 200–2000)",
+    "aux": "Aux buttons",
+    "lamps_guard": "Allow macros with headlamps ON (default OFF, not recommended)"
+  },
+  "errors": {
+    "rejected": "Command rejected by module",
+    "offline": "No connection — showing last known state",
+    "invalid": "Invalid value — out of range"
+  }
+}

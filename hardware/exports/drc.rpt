@@ -1,0 +1,361 @@
+** Drc report for na-wink.kicad_pcb **
+** Created on 2026-09-25T17:14:01 **
+** Report includes: Errors, Warnings **
+
+** Found 81 DRC violations **
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(84.0000 mm, 57.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(8.7300 mm, 36.2700 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(37.2700 mm, 35.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(25.0000 mm, 48.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(34.0000 mm, 48.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(28.5000 mm, 60.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(28.5000 mm, 64.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(52.0000 mm, 35.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(43.3000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(55.0000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(68.0000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(81.0000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(44.5400 mm, 65.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(70.5400 mm, 65.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(49.0000 mm, 15.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(53.0000 mm, 15.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(45.2700 mm, 28.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(53.2700 mm, 28.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(75.2700 mm, 36.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(62.8100 mm, 42.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(77.8100 mm, 42.0000 mm): Via [GND] no top_cu - bottom_cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(92.5400 mm, 20.0000 mm): Via [GND] no top_cu - bottom_cu
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'MountingHole'
+    Local override; warning
+    @(5.0000 mm, 5.0000 mm): Footprint MH
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'MountingHole'
+    Local override; warning
+    @(95.0000 mm, 5.0000 mm): Footprint MH
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'MountingHole'
+    Local override; warning
+    @(50.0000 mm, 5.0000 mm): Footprint MH
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'MountingHole'
+    Local override; warning
+    @(95.0000 mm, 65.0000 mm): Footprint MH
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Connector_Molex'
+    Local override; warning
+    @(10.0000 mm, 35.0000 mm): Footprint J1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Fuse'
+    Local override; warning
+    @(22.0000 mm, 35.0000 mm): Footprint F1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Module'
+    Local override; warning
+    @(30.0000 mm, 35.0000 mm): Footprint D_REV
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(36.0000 mm, 35.0000 mm): Footprint TVS1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Module'
+    Local override; warning
+    @(26.0000 mm, 48.0000 mm): Footprint U_BUCK
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Inductor_SMD'
+    Local override; warning
+    @(32.0000 mm, 44.0000 mm): Footprint L_BUCK
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_TO_SOT_SMD'
+    Local override; warning
+    @(34.0000 mm, 48.0000 mm): Footprint U_LDO
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Capacitor_THT'
+    Local override; warning
+    @(26.0000 mm, 60.0000 mm): Footprint C_BULK1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Capacitor_THT'
+    Local override; warning
+    @(26.0000 mm, 64.0000 mm): Footprint C_BULK2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Module'
+    Local override; warning
+    @(58.0000 mm, 35.0000 mm): Footprint U_MCU
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(30.0000 mm, 28.0000 mm): Footprint R_SENSE
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(44.0000 mm, 41.0000 mm): Footprint R1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(57.0000 mm, 41.0000 mm): Footprint R2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(70.0000 mm, 41.0000 mm): Footprint R3
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(83.0000 mm, 41.0000 mm): Footprint R4
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(48.0000 mm, 44.0000 mm): Footprint D1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(61.0000 mm, 44.0000 mm): Footprint D2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(74.0000 mm, 44.0000 mm): Footprint D3
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(87.0000 mm, 44.0000 mm): Footprint D4
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(36.0000 mm, 24.0000 mm): Footprint D5
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_TO_SOT_SMD'
+    Local override; warning
+    @(42.0000 mm, 47.0000 mm): Footprint Q1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_TO_SOT_SMD'
+    Local override; warning
+    @(55.0000 mm, 47.0000 mm): Footprint Q2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_TO_SOT_SMD'
+    Local override; warning
+    @(68.0000 mm, 47.0000 mm): Footprint Q3
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_TO_SOT_SMD'
+    Local override; warning
+    @(81.0000 mm, 47.0000 mm): Footprint Q4
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Relay_THT'
+    Local override; warning
+    @(42.0000 mm, 55.0000 mm): Footprint K1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Relay_THT'
+    Local override; warning
+    @(55.0000 mm, 55.0000 mm): Footprint K2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Relay_THT'
+    Local override; warning
+    @(68.0000 mm, 55.0000 mm): Footprint K3
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Relay_THT'
+    Local override; warning
+    @(81.0000 mm, 55.0000 mm): Footprint K4
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_DIP'
+    Local override; warning
+    @(50.0000 mm, 15.0000 mm): Footprint U_OPTO_BTN
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Connector_Molex'
+    Local override; warning
+    @(42.0000 mm, 65.0000 mm): Footprint J2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Connector_Molex'
+    Local override; warning
+    @(68.0000 mm, 65.0000 mm): Footprint J3
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Connector_PinHeader'
+    Local override; warning
+    @(90.0000 mm, 20.0000 mm): Footprint J_PROG
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(78.0000 mm, 32.0000 mm): Footprint R_AUX1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(78.0000 mm, 24.0000 mm): Footprint R_AUX2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(44.0000 mm, 28.0000 mm): Footprint C_DEC1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(52.0000 mm, 28.0000 mm): Footprint C_DEC2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(74.0000 mm, 36.0000 mm): Footprint C_DEC3
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(61.5400 mm, 42.0000 mm): Footprint C_DEC4
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    Local override; warning
+    @(76.5400 mm, 42.0000 mm): Footprint C_DEC5
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    Local override; warning
+    @(12.0000 mm, 8.0000 mm): Footprint TP1
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    Local override; warning
+    @(16.0000 mm, 8.0000 mm): Footprint TP2
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    Local override; warning
+    @(20.0000 mm, 8.0000 mm): Footprint TP3
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    Local override; warning
+    @(24.0000 mm, 8.0000 mm): Footprint TP4
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    Local override; warning
+    @(28.0000 mm, 8.0000 mm): Footprint TP5
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    Local override; warning
+    @(32.0000 mm, 8.0000 mm): Footprint TP6
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    Local override; warning
+    @(36.0000 mm, 8.0000 mm): Footprint TP7
+[lib_footprint_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    Local override; warning
+    @(40.0000 mm, 8.0000 mm): Footprint TP8
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.0000 mm, 61.0000 mm): Campo de referência do C_BULK2
+    @(23.5000 mm, 60.0000 mm): Ilha 1 [12V_PROTECTED] de C_BULK1 no top_cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.0000 mm, 61.0000 mm): Campo de referência do C_BULK2
+    @(28.5000 mm, 60.0000 mm): Ilha 2 [GND] de C_BULK1 no top_cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(34.0000 mm, 45.0000 mm): Campo de referência do U_LDO
+    @(33.2700 mm, 44.0000 mm): Ilha 2 [5V] de L_BUCK no top_cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(50.0000 mm, 2.0000 mm): Texto da PCI 'NA-WINK REV 0.3.3 REVIEW DRAFT - NOT FAB' em F.Silkscreen
+    @(50.0000 mm, 5.0000 mm): Ilha PTH [<no net>] de MH
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(74.0000 mm, 33.0000 mm): Campo de referência do C_DEC3
+    @(76.7300 mm, 32.0000 mm): Ilha 1 [AUX1] de R_AUX1 no top_cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(90.0000 mm, 17.0000 mm): Campo de referência do J_PROG
+    @(92.5400 mm, 17.4600 mm): Ilha 6 [EN] de J_PROG no top_cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(90.0000 mm, 17.0000 mm): Campo de referência do J_PROG
+    @(87.4600 mm, 17.4600 mm): Ilha 3 [BOOT] de J_PROG no top_cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(61.0000 mm, 41.0000 mm): Campo de referência do D2
+    @(60.2700 mm, 42.0000 mm): Ilha 1 [5V] de C_DEC4 no top_cu
+
+** Found 23 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(8.7300 mm, 36.2700 mm): Ilha 2 [GND] de J1 no top_cu
+    @(25.0000 mm, 48.0000 mm): Ilha 2 [GND] de U_BUCK no top_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(28.5000 mm, 60.0000 mm): Ilha 2 [GND] de C_BULK1 no top_cu
+    @(28.5000 mm, 64.0000 mm): Ilha 2 [GND] de C_BULK2 no top_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(28.5000 mm, 60.0000 mm): Ilha 2 [GND] de C_BULK1 no top_cu
+    @(25.0000 mm, 48.0000 mm): Ilha 2 [GND] de U_BUCK no top_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(34.0000 mm, 48.0000 mm): Ilha 2 [GND] de U_LDO no top_cu
+    @(25.0000 mm, 48.0000 mm): Ilha 2 [GND] de U_BUCK no top_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(34.7300 mm, 24.0000 mm): Ilha 1 [GND] de D5 no top_cu
+    @(45.2700 mm, 28.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(42.0000 mm, 47.0000 mm): Ilha 2 [GND] de Q1 no top_cu
+    @(43.3000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(42.0000 mm, 47.0000 mm): Ilha 2 [GND] de Q1 no top_cu
+    @(34.0000 mm, 48.0000 mm): Ilha 2 [GND] de U_LDO no top_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(45.2700 mm, 28.0000 mm): Via [GND] no top_cu - bottom_cu
+    @(37.2700 mm, 35.0000 mm): Ilha 2 [GND] de TVS1 no top_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(52.0000 mm, 35.0000 mm): Ilha 2 [GND] de U_MCU no top_cu
+    @(55.0000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(53.0000 mm, 15.0000 mm): Via [GND] no top_cu - bottom_cu
+    @(49.0000 mm, 15.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(53.0000 mm, 15.0000 mm): Via [GND] no top_cu - bottom_cu
+    @(53.2700 mm, 28.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(53.2700 mm, 28.0000 mm): Via [GND] no top_cu - bottom_cu
+    @(52.0000 mm, 35.0000 mm): Ilha 2 [GND] de U_MCU no top_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(53.2700 mm, 28.0000 mm): Via [GND] no top_cu - bottom_cu
+    @(45.2700 mm, 28.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(55.0000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+    @(58.0000 mm, 55.0000 mm): Pista [GND] no top_cu, comprimento 11.8000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(55.0000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+    @(43.3000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(58.0000 mm, 66.8000 mm): Via [GND] no top_cu - bottom_cu
+    @(70.5400 mm, 65.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(62.8100 mm, 42.0000 mm): Via [GND] no top_cu - bottom_cu
+    @(55.0000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(68.0000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+    @(62.8100 mm, 42.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(77.8100 mm, 42.0000 mm): Via [GND] no top_cu - bottom_cu
+    @(81.0000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(77.8100 mm, 42.0000 mm): Via [GND] no top_cu - bottom_cu
+    @(75.2700 mm, 36.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(77.8100 mm, 42.0000 mm): Via [GND] no top_cu - bottom_cu
+    @(68.0000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(84.0000 mm, 55.0000 mm): Pista [GND] no top_cu, comprimento 2.0000 mm
+    @(81.0000 mm, 47.0000 mm): Via [GND] no top_cu - bottom_cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(92.5400 mm, 20.0000 mm): Via [GND] no top_cu - bottom_cu
+    @(75.2700 mm, 36.0000 mm): Via [GND] no top_cu - bottom_cu
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

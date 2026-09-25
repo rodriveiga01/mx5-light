@@ -1,0 +1,1153 @@
+ERC report (2026-09-25T17:13:59, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(10.00 mm, 32.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(10.00 mm, 37.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(12.38 mm, 85.00 mm): Fio horizontal, comprimento 4.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(10.00 mm, 32.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(10.00 mm, 37.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(10.00 mm, 42.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(10.00 mm, 47.50 mm): Symbol J1 Pino 1 [VBAT, Alimentação, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(10.00 mm, 47.50 mm): Fio vertical, comprimento 4.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(10.00 mm, 52.00 mm): Fio horizontal, comprimento 15.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(12.38 mm, 85.00 mm): Symbol D5 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(12.38 mm, 85.00 mm): Fio horizontal, comprimento 4.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(14.00 mm, 42.50 mm): Symbol FLG3 Pino 1 [PWR, Saída de alimentação, Linha]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(14.00 mm, 42.50 mm): Símbolo FLG3 [PWR_FLAG]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(15.00 mm, 37.50 mm): Fio vertical, comprimento 32.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(15.00 mm, 70.00 mm): Fio horizontal, comprimento 1.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(16.38 mm, 70.00 mm): Symbol R_SENSE Pino 1 [A, Passivo, Linha]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Connector_Molex'
+    ; warning
+    @(20.00 mm, 40.00 mm): Símbolo J1 [CONN_8_MX120G]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(20.00 mm, 40.00 mm): Símbolo J1 [CONN_8_MX120G]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(20.00 mm, 85.00 mm): Símbolo D5 [D]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(20.00 mm, 85.00 mm): Símbolo D5 [D]
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(20.00 mm, 95.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(20.00 mm, 95.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(20.00 mm, 105.00 mm): Symbol U_OPTO_BTN Pino 1 [ANODE, Entrada, Linha]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(24.00 mm, 70.00 mm): Símbolo R_SENSE [R]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(24.00 mm, 70.00 mm): Símbolo R_SENSE [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(25.00 mm, 52.00 mm): Symbol FLG1 Pino 1 [PWR, Saída de alimentação, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(25.00 mm, 52.00 mm): Fio horizontal, comprimento 15.00 mm
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(25.00 mm, 52.00 mm): Símbolo FLG1 [PWR_FLAG]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(27.62 mm, 85.00 mm): Fio horizontal, comprimento 3.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 32.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 37.50 mm): Fio horizontal, comprimento 15.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 42.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 47.50 mm): Fio horizontal, comprimento 4.00 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_DIP'
+    ; warning
+    @(30.00 mm, 100.00 mm): Símbolo U_OPTO_BTN [OPTO_4N25]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(30.00 mm, 100.00 mm): Símbolo U_OPTO_BTN [OPTO_4N25]
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(27.62 mm, 85.00 mm): Fio horizontal, comprimento 3.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(31.62 mm, 70.00 mm): Fio vertical, comprimento 35.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(31.62 mm, 105.00 mm): Fio horizontal, comprimento 11.62 mm
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(32.00 mm, 32.50 mm): Rótulo 'AUX_GND'
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(30.00 mm, 32.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(30.00 mm, 42.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(30.00 mm, 47.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(40.00 mm, 40.00 mm): Symbol F1 Pino 1 [IN, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(40.00 mm, 52.00 mm): Fio vertical, comprimento 12.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(40.00 mm, 95.00 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(40.00 mm, 105.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(40.00 mm, 105.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(40.00 mm, 95.00 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(44.38 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(44.38 mm, 122.00 mm): Symbol R1 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(44.38 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(45.00 mm, 125.00 mm): Fio vertical, comprimento 27.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(45.00 mm, 152.50 mm): Fio horizontal, comprimento 5.00 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Fuse'
+    ; warning
+    @(50.00 mm, 40.00 mm): Símbolo F1 [FUSE_ATO_10A]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(50.00 mm, 40.00 mm): Símbolo F1 [FUSE_ATO_10A]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(50.00 mm, 52.00 mm): Symbol D_REV Pino 1 [IN, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(50.00 mm, 130.00 mm): Symbol Q1 Pino 1 [B, Entrada, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(50.00 mm, 130.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(50.00 mm, 130.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(50.00 mm, 167.50 mm): Symbol K1 Pino 1 [COIL+, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(50.00 mm, 167.50 mm): Fio vertical, comprimento 4.50 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(50.00 mm, 167.50 mm): Fio vertical, comprimento 4.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(50.00 mm, 205.00 mm): Symbol J2 Pino 1 [MOT_A, Passivo, Linha]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(52.00 mm, 122.00 mm): Símbolo R1 [R]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(52.00 mm, 122.00 mm): Símbolo R1 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(59.62 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(59.62 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(60.00 mm, 40.00 mm): Fio vertical, comprimento 12.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(60.00 mm, 52.00 mm): Fio horizontal, comprimento 10.00 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Module'
+    ; warning
+    @(60.00 mm, 52.00 mm): Símbolo D_REV [D_REV_IDEAL]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(60.00 mm, 52.00 mm): Símbolo D_REV [D_REV_IDEAL]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_TO_SOT_SMD'
+    ; warning
+    @(60.00 mm, 130.00 mm): Símbolo Q1 [MMBT2222A]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(60.00 mm, 130.00 mm): Símbolo Q1 [MMBT2222A]
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(60.00 mm, 137.38 mm): Fio vertical, comprimento 4.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(60.00 mm, 137.38 mm): Fio vertical, comprimento 4.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(60.00 mm, 145.00 mm): Símbolo C_DEC4 [C]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(60.00 mm, 145.00 mm): Símbolo C_DEC4 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(60.00 mm, 152.62 mm): Symbol C_DEC4 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(60.00 mm, 152.62 mm): Fio vertical, comprimento 4.38 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(60.00 mm, 152.62 mm): Fio vertical, comprimento 4.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Relay_THT'
+    ; warning
+    @(60.00 mm, 160.00 mm): Símbolo K1 [RELAY_DPDT_G2R]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(60.00 mm, 160.00 mm): Símbolo K1 [RELAY_DPDT_G2R]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Connector_Molex'
+    ; warning
+    @(60.00 mm, 200.00 mm): Símbolo J2 [CONN_3_MOTOR]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(60.00 mm, 200.00 mm): Símbolo J2 [CONN_3_MOTOR]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(60.38 mm, 122.00 mm): Symbol D1 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(60.38 mm, 122.00 mm): Fio horizontal, comprimento 3.62 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(60.38 mm, 122.00 mm): Fio horizontal, comprimento 3.62 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(68.00 mm, 122.00 mm): Símbolo D1 [D]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(68.00 mm, 122.00 mm): Símbolo D1 [D]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.00 mm, 30.00 mm): Symbol TVS1 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.00 mm, 30.00 mm): Fio vertical, comprimento 22.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.00 mm, 52.00 mm): Fio horizontal, comprimento 25.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.00 mm, 125.00 mm): Fio horizontal, comprimento 25.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.00 mm, 135.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(70.00 mm, 135.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.00 mm, 157.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.00 mm, 162.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.00 mm, 167.50 mm): Fio horizontal, comprimento 5.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(70.00 mm, 200.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(70.00 mm, 200.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(70.00 mm, 157.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(70.00 mm, 162.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(75.00 mm, 167.50 mm): Fio vertical, comprimento 37.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(75.00 mm, 205.00 mm): Fio horizontal, comprimento 25.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(75.62 mm, 122.00 mm): Fio horizontal, comprimento 3.38 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(75.62 mm, 122.00 mm): Fio horizontal, comprimento 3.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(80.00 mm, 30.00 mm): Símbolo TVS1 [SMBJ26CA_TVS]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(80.00 mm, 30.00 mm): Símbolo TVS1 [SMBJ26CA_TVS]
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(84.00 mm, 62.62 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(84.00 mm, 47.38 mm): Fio vertical, comprimento 4.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(84.00 mm, 47.38 mm): Fio vertical, comprimento 4.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Capacitor_THT'
+    ; warning
+    @(84.00 mm, 55.00 mm): Símbolo C_BULK1 [C]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(84.00 mm, 55.00 mm): Símbolo C_BULK1 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(84.00 mm, 62.62 mm): Symbol C_BULK1 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(84.00 mm, 62.62 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(84.38 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(84.38 mm, 122.00 mm): Symbol R2 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(84.38 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(85.00 mm, 125.00 mm): Fio vertical, comprimento 27.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(85.00 mm, 152.50 mm): Fio horizontal, comprimento 5.00 mm
+[label_multiple_wires]: O rótulo conecta mais que um fio em 900000, 260000
+    ; warning
+    @(90.00 mm, 26.00 mm): Rótulo 'GND'
+    @(90.00 mm, 30.00 mm): Fio vertical, comprimento 6.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(90.00 mm, 30.00 mm): Fio vertical, comprimento 6.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(90.00 mm, 30.00 mm): Fio vertical, comprimento 6.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(90.00 mm, 130.00 mm): Symbol Q2 Pino 1 [B, Entrada, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(90.00 mm, 130.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(90.00 mm, 130.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(90.00 mm, 167.50 mm): Symbol K2 Pino 1 [COIL+, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(90.00 mm, 167.50 mm): Fio vertical, comprimento 4.50 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(90.00 mm, 167.50 mm): Fio vertical, comprimento 4.50 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(92.00 mm, 122.00 mm): Símbolo R2 [R]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(92.00 mm, 122.00 mm): Símbolo R2 [R]
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(95.00 mm, 35.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(95.00 mm, 35.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(95.00 mm, 45.00 mm): Symbol U_BUCK Pino 1 [VIN, Alimentação, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(95.00 mm, 52.00 mm): Symbol FLG2 Pino 1 [PWR, Saída de alimentação, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(95.00 mm, 52.00 mm): Fio horizontal, comprimento 5.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(95.00 mm, 52.00 mm): Fio vertical, comprimento 7.00 mm
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(95.00 mm, 52.00 mm): Símbolo FLG2 [PWR_FLAG]
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(100.00 mm, 92.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(100.00 mm, 97.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(100.00 mm, 102.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(99.62 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(99.62 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(95.00 mm, 52.00 mm): Fio horizontal, comprimento 5.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(100.00 mm, 62.38 mm): Fio vertical, comprimento 4.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(100.00 mm, 62.38 mm): Fio vertical, comprimento 4.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(100.00 mm, 70.00 mm): Símbolo C_DEC1 [C]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(100.00 mm, 70.00 mm): Símbolo C_DEC1 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(100.00 mm, 77.62 mm): Symbol C_DEC1 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(100.00 mm, 77.62 mm): Fio vertical, comprimento 4.38 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(100.00 mm, 77.62 mm): Fio vertical, comprimento 4.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(100.00 mm, 92.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(100.00 mm, 97.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(100.00 mm, 102.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(100.00 mm, 107.50 mm): Symbol U_MCU Pino 1 [3V3, Alimentação, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(100.00 mm, 112.00 mm): Fio vertical, comprimento 4.50 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_TO_SOT_SMD'
+    ; warning
+    @(100.00 mm, 130.00 mm): Símbolo Q2 [MMBT2222A]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(100.00 mm, 130.00 mm): Símbolo Q2 [MMBT2222A]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Relay_THT'
+    ; warning
+    @(100.00 mm, 160.00 mm): Símbolo K2 [RELAY_DPDT_G2R]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(100.00 mm, 160.00 mm): Símbolo K2 [RELAY_DPDT_G2R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(100.38 mm, 122.00 mm): Symbol D2 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(100.38 mm, 122.00 mm): Fio horizontal, comprimento 3.62 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(100.38 mm, 122.00 mm): Fio horizontal, comprimento 3.62 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Module'
+    ; warning
+    @(105.00 mm, 40.00 mm): Símbolo U_BUCK [LM46002_BUCK]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(105.00 mm, 40.00 mm): Símbolo U_BUCK [LM46002_BUCK]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(108.00 mm, 122.00 mm): Símbolo D2 [D]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(108.00 mm, 122.00 mm): Símbolo D2 [D]
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(110.00 mm, 62.38 mm): Fio vertical, comprimento 4.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(110.00 mm, 62.38 mm): Fio vertical, comprimento 4.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(110.00 mm, 70.00 mm): Símbolo C_DEC2 [C]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(110.00 mm, 70.00 mm): Símbolo C_DEC2 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(110.00 mm, 77.62 mm): Symbol C_DEC2 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(110.00 mm, 77.62 mm): Fio vertical, comprimento 4.38 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(110.00 mm, 77.62 mm): Fio vertical, comprimento 4.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Module'
+    ; warning
+    @(110.00 mm, 100.00 mm): Símbolo U_MCU [ESP32_S3_WROOM_1]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(110.00 mm, 100.00 mm): Símbolo U_MCU [ESP32_S3_WROOM_1]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(110.00 mm, 125.00 mm): Fio horizontal, comprimento 25.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(110.00 mm, 135.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(110.00 mm, 135.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(110.00 mm, 157.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(110.00 mm, 162.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(110.00 mm, 167.50 mm): Fio horizontal, comprimento 5.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(110.00 mm, 157.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(110.00 mm, 162.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(115.00 mm, 35.00 mm): Fio vertical, comprimento 1.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(115.00 mm, 36.00 mm): Fio horizontal, comprimento 17.62 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(115.00 mm, 45.00 mm): Fio horizontal, comprimento 2.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(115.00 mm, 167.50 mm): Fio vertical, comprimento 27.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(115.00 mm, 195.00 mm): Fio horizontal, comprimento 65.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(115.62 mm, 122.00 mm): Fio horizontal, comprimento 3.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(117.38 mm, 45.00 mm): Symbol L_BUCK Pino 1 [A, Passivo, Linha]
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(115.62 mm, 122.00 mm): Fio horizontal, comprimento 3.38 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(120.00 mm, 62.38 mm): Fio vertical, comprimento 4.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(120.00 mm, 62.38 mm): Fio vertical, comprimento 4.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(120.00 mm, 70.00 mm): Símbolo C_DEC3 [C]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(120.00 mm, 70.00 mm): Símbolo C_DEC3 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(120.00 mm, 77.62 mm): Symbol C_DEC3 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(120.00 mm, 77.62 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(120.00 mm, 87.50 mm): Fio horizontal, comprimento 12.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(120.00 mm, 92.50 mm): Fio horizontal, comprimento 12.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(120.00 mm, 97.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(120.00 mm, 102.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(120.00 mm, 107.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(120.00 mm, 77.62 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(120.00 mm, 97.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(120.00 mm, 102.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(120.00 mm, 107.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(124.38 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(124.38 mm, 122.00 mm): Symbol R3 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(124.38 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(125.00 mm, 47.38 mm): Fio vertical, comprimento 4.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Inductor_SMD'
+    ; warning
+    @(125.00 mm, 45.00 mm): Símbolo L_BUCK [L_BUCK]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(125.00 mm, 45.00 mm): Símbolo L_BUCK [L_BUCK]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(125.00 mm, 47.38 mm): Fio vertical, comprimento 4.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Capacitor_THT'
+    ; warning
+    @(125.00 mm, 55.00 mm): Símbolo C_BULK2 [C]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(125.00 mm, 55.00 mm): Símbolo C_BULK2 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(125.00 mm, 62.62 mm): Symbol C_BULK2 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(125.00 mm, 62.62 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(125.00 mm, 125.00 mm): Fio vertical, comprimento 27.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(125.00 mm, 152.50 mm): Fio horizontal, comprimento 5.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(125.00 mm, 62.62 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(130.00 mm, 35.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(130.00 mm, 35.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(130.00 mm, 45.00 mm): Symbol U_LDO Pino 1 [VIN5V, Alimentação, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(130.00 mm, 130.00 mm): Symbol Q3 Pino 1 [B, Entrada, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(130.00 mm, 130.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(130.00 mm, 130.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(130.00 mm, 167.50 mm): Symbol K3 Pino 1 [COIL+, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(130.00 mm, 167.50 mm): Fio vertical, comprimento 4.50 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(130.00 mm, 167.50 mm): Fio vertical, comprimento 4.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(130.00 mm, 205.00 mm): Symbol J3 Pino 1 [MOT_A, Passivo, Linha]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(132.00 mm, 122.00 mm): Símbolo R3 [R]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(132.00 mm, 122.00 mm): Símbolo R3 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(132.38 mm, 80.00 mm): Symbol R_AUX2 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(132.38 mm, 87.50 mm): Fio vertical, comprimento 7.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(132.38 mm, 92.50 mm): Fio vertical, comprimento 2.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(132.38 mm, 95.00 mm): Symbol R_AUX1 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(132.62 mm, 36.00 mm): Fio vertical, comprimento 9.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(132.62 mm, 45.00 mm): Fio horizontal, comprimento 2.62 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(139.62 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(139.62 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_TO_SOT_SMD'
+    ; warning
+    @(140.00 mm, 40.00 mm): Símbolo U_LDO [KF33BD_LDO]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(140.00 mm, 40.00 mm): Símbolo U_LDO [KF33BD_LDO]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(140.00 mm, 80.00 mm): Símbolo R_AUX2 [R]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(140.00 mm, 80.00 mm): Símbolo R_AUX2 [R]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(140.00 mm, 95.00 mm): Símbolo R_AUX1 [R]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(140.00 mm, 95.00 mm): Símbolo R_AUX1 [R]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_TO_SOT_SMD'
+    ; warning
+    @(140.00 mm, 130.00 mm): Símbolo Q3 [MMBT2222A]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(140.00 mm, 130.00 mm): Símbolo Q3 [MMBT2222A]
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(140.00 mm, 137.38 mm): Fio vertical, comprimento 4.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(140.00 mm, 137.38 mm): Fio vertical, comprimento 4.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(140.00 mm, 145.00 mm): Símbolo C_DEC5 [C]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(140.00 mm, 145.00 mm): Símbolo C_DEC5 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(140.00 mm, 152.62 mm): Symbol C_DEC5 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(140.00 mm, 152.62 mm): Fio vertical, comprimento 4.38 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(140.00 mm, 152.62 mm): Fio vertical, comprimento 4.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Relay_THT'
+    ; warning
+    @(140.00 mm, 160.00 mm): Símbolo K3 [RELAY_DPDT_G2R]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(140.00 mm, 160.00 mm): Símbolo K3 [RELAY_DPDT_G2R]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Connector_Molex'
+    ; warning
+    @(140.00 mm, 200.00 mm): Símbolo J3 [CONN_3_MOTOR]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(140.00 mm, 200.00 mm): Símbolo J3 [CONN_3_MOTOR]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(140.38 mm, 122.00 mm): Symbol D3 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(140.38 mm, 122.00 mm): Fio horizontal, comprimento 3.62 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(140.38 mm, 122.00 mm): Fio horizontal, comprimento 3.62 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(147.62 mm, 80.00 mm): Fio vertical, comprimento 15.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(147.62 mm, 95.00 mm): Fio vertical, comprimento 17.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(147.62 mm, 112.00 mm): Fio horizontal, comprimento 12.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(148.00 mm, 122.00 mm): Símbolo D3 [D]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(148.00 mm, 122.00 mm): Símbolo D3 [D]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(150.00 mm, 40.00 mm): Fio horizontal, comprimento 10.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(150.00 mm, 125.00 mm): Fio horizontal, comprimento 25.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(150.00 mm, 135.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(150.00 mm, 135.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(150.00 mm, 157.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(150.00 mm, 162.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(150.00 mm, 167.50 mm): Fio horizontal, comprimento 5.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(150.00 mm, 200.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(150.00 mm, 200.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(150.00 mm, 157.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(150.00 mm, 162.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(155.00 mm, 167.50 mm): Fio vertical, comprimento 37.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(155.00 mm, 205.00 mm): Fio horizontal, comprimento 25.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(155.62 mm, 122.00 mm): Fio horizontal, comprimento 3.38 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(155.62 mm, 122.00 mm): Fio horizontal, comprimento 3.38 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(160.00 mm, 40.00 mm): Fio vertical, comprimento 72.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(160.00 mm, 112.00 mm): Fio horizontal, comprimento 60.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(164.38 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(164.38 mm, 122.00 mm): Symbol R4 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(164.38 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(165.00 mm, 125.00 mm): Fio vertical, comprimento 27.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(165.00 mm, 152.50 mm): Fio horizontal, comprimento 5.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(170.00 mm, 130.00 mm): Symbol Q4 Pino 1 [B, Entrada, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(170.00 mm, 130.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(170.00 mm, 130.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(170.00 mm, 167.50 mm): Symbol K4 Pino 1 [COIL+, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(170.00 mm, 167.50 mm): Fio vertical, comprimento 4.50 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(170.00 mm, 167.50 mm): Fio vertical, comprimento 4.50 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(172.00 mm, 122.00 mm): Símbolo R4 [R]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(172.00 mm, 122.00 mm): Símbolo R4 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(179.62 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(179.62 mm, 122.00 mm): Fio vertical, comprimento 4.00 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_TO_SOT_SMD'
+    ; warning
+    @(180.00 mm, 130.00 mm): Símbolo Q4 [MMBT2222A]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(180.00 mm, 130.00 mm): Símbolo Q4 [MMBT2222A]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Relay_THT'
+    ; warning
+    @(180.00 mm, 160.00 mm): Símbolo K4 [RELAY_DPDT_G2R]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(180.00 mm, 160.00 mm): Símbolo K4 [RELAY_DPDT_G2R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(180.38 mm, 122.00 mm): Symbol D4 Pino 1 [A, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(180.38 mm, 122.00 mm): Fio horizontal, comprimento 3.62 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(180.38 mm, 122.00 mm): Fio horizontal, comprimento 3.62 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(190.00 mm, 97.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(190.00 mm, 102.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(190.00 mm, 107.50 mm): Fio horizontal, comprimento 4.00 mm
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(188.00 mm, 97.50 mm): Rótulo 'BOOT'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(188.00 mm, 102.50 mm): Rótulo 'RX0'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(188.00 mm, 107.50 mm): Rótulo 'TX0'
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Package_SMD'
+    ; warning
+    @(188.00 mm, 122.00 mm): Símbolo D4 [D]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'Device'
+    ; warning
+    @(188.00 mm, 122.00 mm): Símbolo D4 [D]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(190.00 mm, 97.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(190.00 mm, 102.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(190.00 mm, 107.50 mm): Symbol J_PROG Pino 1 [TX0, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(190.00 mm, 107.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(190.00 mm, 125.00 mm): Fio horizontal, comprimento 25.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(190.00 mm, 135.00 mm): Fio vertical, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(190.00 mm, 135.00 mm): Fio vertical, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(190.00 mm, 157.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(190.00 mm, 162.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(190.00 mm, 167.50 mm): Fio horizontal, comprimento 5.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(190.00 mm, 157.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(190.00 mm, 162.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(195.00 mm, 167.50 mm): Fio vertical, comprimento 27.50 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(195.00 mm, 195.00 mm): Fio horizontal, comprimento 65.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(195.62 mm, 122.00 mm): Fio horizontal, comprimento 3.38 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(195.62 mm, 122.00 mm): Fio horizontal, comprimento 3.38 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'Connector_PinHeader'
+    ; warning
+    @(200.00 mm, 100.00 mm): Símbolo J_PROG [PROG_1X06]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(200.00 mm, 100.00 mm): Símbolo J_PROG [PROG_1X06]
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    ; warning
+    @(205.00 mm, 120.00 mm): Símbolo TP1 [TP]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(205.00 mm, 120.00 mm): Símbolo TP1 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.00 mm, 125.00 mm): Symbol TP1 Pino 1 [TP, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.00 mm, 125.00 mm): Fio vertical, comprimento 5.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(205.00 mm, 125.00 mm): Fio vertical, comprimento 5.00 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    ; warning
+    @(205.00 mm, 145.00 mm): Símbolo TP2 [TP]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(205.00 mm, 145.00 mm): Símbolo TP2 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.00 mm, 150.00 mm): Symbol TP2 Pino 1 [TP, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.00 mm, 150.00 mm): Fio vertical, comprimento 5.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(205.00 mm, 150.00 mm): Fio vertical, comprimento 5.00 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    ; warning
+    @(205.00 mm, 170.00 mm): Símbolo TP3 [TP]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(205.00 mm, 170.00 mm): Símbolo TP3 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.00 mm, 175.00 mm): Symbol TP3 Pino 1 [TP, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.00 mm, 175.00 mm): Fio vertical, comprimento 5.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(205.00 mm, 175.00 mm): Fio vertical, comprimento 5.00 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    ; warning
+    @(205.00 mm, 195.00 mm): Símbolo TP4 [TP]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(205.00 mm, 195.00 mm): Símbolo TP4 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.00 mm, 200.00 mm): Symbol TP4 Pino 1 [TP, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(205.00 mm, 200.00 mm): Fio vertical, comprimento 5.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(205.00 mm, 200.00 mm): Fio vertical, comprimento 5.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(210.00 mm, 97.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(210.00 mm, 102.50 mm): Fio horizontal, comprimento 4.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(210.00 mm, 107.50 mm): Fio horizontal, comprimento 4.00 mm
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(212.00 mm, 97.50 mm): Rótulo 'EN'
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(210.00 mm, 97.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(210.00 mm, 102.50 mm): Fio horizontal, comprimento 4.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(210.00 mm, 107.50 mm): Fio horizontal, comprimento 4.00 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    ; warning
+    @(225.00 mm, 120.00 mm): Símbolo TP5 [TP]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(225.00 mm, 120.00 mm): Símbolo TP5 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(225.00 mm, 125.00 mm): Symbol TP5 Pino 1 [TP, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(225.00 mm, 125.00 mm): Fio vertical, comprimento 5.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(225.00 mm, 125.00 mm): Fio vertical, comprimento 5.00 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    ; warning
+    @(225.00 mm, 145.00 mm): Símbolo TP6 [TP]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(225.00 mm, 145.00 mm): Símbolo TP6 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(225.00 mm, 150.00 mm): Symbol TP6 Pino 1 [TP, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(225.00 mm, 150.00 mm): Fio vertical, comprimento 5.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(225.00 mm, 150.00 mm): Fio vertical, comprimento 5.00 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    ; warning
+    @(225.00 mm, 170.00 mm): Símbolo TP7 [TP]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(225.00 mm, 170.00 mm): Símbolo TP7 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(225.00 mm, 175.00 mm): Symbol TP7 Pino 1 [TP, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(225.00 mm, 175.00 mm): Fio vertical, comprimento 5.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(225.00 mm, 175.00 mm): Fio vertical, comprimento 5.00 mm
+[footprint_link_issues]: A configuração atual não inclui a biblioteca de footprints 'TestPoint'
+    ; warning
+    @(225.00 mm, 195.00 mm): Símbolo TP8 [TP]
+[lib_symbol_issues]: A configuração atual não inclui os símbolos da biblioteca 'na-wink'
+    ; warning
+    @(225.00 mm, 195.00 mm): Símbolo TP8 [TP]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(225.00 mm, 200.00 mm): Symbol TP8 Pino 1 [TP, Passivo, Linha]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(225.00 mm, 200.00 mm): Fio vertical, comprimento 5.00 mm
+[unconnected_wire_endpoint]: Extremidade do fio não conectado
+    ; warning
+    @(225.00 mm, 200.00 mm): Fio vertical, comprimento 5.00 mm
+
+ ** ERC messages: 380  Errors 0  Warnings 380
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

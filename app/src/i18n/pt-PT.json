@@ -1,0 +1,64 @@
+{
+  "app": { "name": "Controlo de Faróis NA", "offline": true, "version": "0.2.1" },
+  "home": {
+    "title": "Faróis",
+    "up": "Subir",
+    "down": "Descer",
+    "wink": "Piscar",
+    "wave": "Onda",
+    "sleepy": "Sleepy eye",
+    "left": "Esquerdo",
+    "right": "Direito",
+    "both": "Ambos",
+    "stop": "Parar",
+    "cancel": "Cancelar",
+    "wave_delay": "Atraso da onda (ms)",
+    "sleepy_left": "Sleepy esquerdo (%)",
+    "sleepy_right": "Sleepy direito (%)",
+    "save": "Guardar",
+    "status": "Estado",
+    "connected": "Ligado",
+    "disconnected": "Desligado",
+    "locked": "Bloqueado — aguarde 5 s"
+  },
+  "safety": {
+    "road_disclaimer": "Apenas exposição/pista/propriedade privada. Não aprovado para via pública."
+  },
+  "pairing": {
+    "title": "Emparelhar módulo",
+    "passkey": "PIN de 6 dígitos",
+    "forget": "Esquecer módulo",
+    "scan": "Procurar",
+    "connect": "Ligar",
+    "reconnect": "Religar",
+    "window": "Janela de emparelhamento: 5 min após o primeiro arranque",
+    "invalid_pin": "Introduza exatamente 6 dígitos",
+    "pin_ok": "Formato do PIN OK — conclua o emparelhamento no módulo; «ligado» aparece após o primeiro comando com sucesso"
+  },
+  "diag": {
+    "title": "Diagnóstico",
+    "position": "Posição",
+    "travel": "Último curso (ms)",
+    "fault": "Falha",
+    "firmware": "Firmware",
+    "settings": "Definições",
+    "clear_fault": "Limpar falha",
+    "fault_none": "Nenhuma",
+    "fault_overtime": "Disparo por excesso — verifique obstrução e limpe",
+    "fault_watchdog": "Reinício por watchdog — módulo em bypass OEM",
+    "fault_locked": "Bloqueio por ritmo — aguarde e tente de novo"
+  },
+  "settings": {
+    "title": "Definições",
+    "buttons": "Mapeamento de botões",
+    "oem_presses": "Pressões OEM (2–9)",
+    "press_gap": "Intervalo (ms, 200–2000)",
+    "aux": "Botões auxiliares",
+    "lamps_guard": "Permitir macros com faróis ligados (predefinição OFF, desaconselhado)"
+  },
+  "errors": {
+    "rejected": "Comando rejeitado pelo módulo",
+    "offline": "Sem ligação — a mostrar o último estado conhecido",
+    "invalid": "Valor inválido — fora do intervalo"
+  }
+}

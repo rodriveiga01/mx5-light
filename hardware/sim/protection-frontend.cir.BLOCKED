@@ -1,0 +1,17 @@
+* BLOCKED ngspice deck template — DO NOT RUN (no validated models) *
+Rename to .cir ONLY after: measured motor R/L + stall/inrush (HV2/HV3) and
+vendor TVS (Littelfuse SMBJ26CA bidirectional) + buck (TI LM46002-Q1) SPICE models are vendored
+under hardware/sim/models/ with URLs + dates. Until then this file is
+documentation of INTENT, not a simulation.
+
+Nodes mirror the schematic: VBAT - F1 - D_REV - TVS1 - 12V_PROTECTED - U_BUCK - 5V - U_LDO - 3V3.
+Motor subcircuit is DELIBERATELY ABSENT (A1 UNMEASURED — never invent).
+
+.protection frontend intent deck (template)
+* .include models/smbj26a.lib      ; VENDOR REQUIRED - not present
+* .include models/lmr33630.lib     ; VENDOR REQUIRED - not present
+* fuse + ideal-diode behavioral placeholders - REPLACE with vendor models
+* Vbat PULSE/TRAN sources per ISO intent - DO NOT CLAIM compliance
+* .tran + .meas of V(12V_PROTECTED) V(5V) V(3V3) at startup + transient
+* motor load: RESISTOR + BULB stand-ins FIRST (HV2 fixture), real motor subcircuit ONLY after measurement
+.end

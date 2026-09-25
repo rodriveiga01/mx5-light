@@ -1,0 +1,11 @@
+{
+  "name": "na-wink-app",
+  "version": "0.1.0",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "test": "node --test __tests__/app.test.js __tests__/protocol.logic.test.js __tests__/extended.logic.test.js",
+    "build:android": "echo 'configured-only: requires Expo EAS + Android SDK (see BUILD.md)'",
+    "build:ios": "echo 'configured-only: requires Expo EAS + Xcode (see BUILD.md)'"
+  }
+}

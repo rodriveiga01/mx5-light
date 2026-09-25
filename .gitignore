@@ -1,0 +1,10 @@
+# Build / tool artifacts (never part of the review package)
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+*.stl
+*.gcode
+.DS_Store
+# Local first-article exports are regenerated, not reviewed
+/tmp/
